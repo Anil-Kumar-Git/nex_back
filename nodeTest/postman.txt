@@ -1,0 +1,20 @@
+http://localhost:3002/v1.0/auth/register
+
+{
+  "email": "a10@a.de",
+  "firstname": "firstname1",
+  "lastname": "lastname",
+  "password": "password1",
+  "mobile": "mobile1",
+  "whatsapp": "whatsapp1",
+  "skype": "skype1",
+  "slack": "slack1",
+  "telegram": "telegram1",
+  "signal": "signal1",
+  "viber": "viber1",
+  "discord": "discord1",
+  "address": "Straße 1",
+  "city" : "Hernn 1",
+  "state" : "NRW 1",
+  "zip" : "00001"
+}

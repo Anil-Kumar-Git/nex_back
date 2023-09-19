@@ -1,0 +1,20 @@
+FROM node:lts
+ 
+WORKDIR /user/src/app
+ 
+COPY . .
+ 
+RUN npm ci
+ 
+RUN npm run build:api
+ 
+USER node
+
+ENV DB_SERVER_PORT $DB_SERVER_PORT
+ENV DB_SERVER_USERNAME $DB_SERVER_USERNAME
+ENV DB_SERVER_PASSWORD $DB_SERVER_PASSWORD
+ENV secretKey $secretKey
+ENV DB_SERVER_HOST $DB_SERVER_HOST
+ENV DATABASE $DATABASE
+ 
+CMD ["npm", "run", "start:api:prod"]
